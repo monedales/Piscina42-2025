@@ -1,42 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/23 19:53:54 by maria-ol          #+#    #+#             */
-/*   Updated: 2025/04/25 16:30:17 by maria-ol         ###   ########.fr       */
+/*   Created: 2025/04/25 17:32:44 by maria-ol          #+#    #+#             */
+/*   Updated: 2025/04/25 17:32:50 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_str_is_alpha(char *str)
 {
 	int	count;
 
 	count = 0;
-	while (src[count] != '\0')
+	while (str[count])
 	{
-		dest[count] = src[count];
+		if ((str[count] >= 'a' && str[count] <= 'z')
+			|| (str[count] >= 'A' && str[count] <= 'Z'))
+			return (1);
+		else
+			return (0);
 		count++;
 	}
-	dest[count] = '\0';
-	return (dest);
+	return (1);
 }
 
-int	main(void)
-{
-	char	src[] = "KKK";
-	char	dest[4];
+// int	main(void)
+// {
+// 	int	i;
 
-	printf("%s\n", src);
-	printf("%s\n", dest);
-
-	ft_strcpy(dest, src);
-
-	printf("src: %s\n", src);
-	printf("dest: %s\n", dest);
-	return (0);
-}
+// 	i = ft_str_is_alpha("$");
+// 	printf("teste: %d\n", i);
+// 	return (0);
+// }
