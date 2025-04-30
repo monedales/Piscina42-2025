@@ -9,8 +9,7 @@
 /*   Updated: 2025/04/25 17:32:50 by maria-ol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
+//alterar header
 
 int	ft_str_is_alpha(char *str)
 {
@@ -19,10 +18,8 @@ int	ft_str_is_alpha(char *str)
 	count = 0;
 	while (str[count])
 	{
-		if ((str[count] >= 'a' && str[count] <= 'z')
-			|| (str[count] >= 'A' && str[count] <= 'Z'))
-			return (1);
-		else
+		if (!((str[count] >= 'a' && str[count] <= 'z')
+			|| (str[count] >= 'A' && str[count] <= 'Z')))
 			return (0);
 		count++;
 	}

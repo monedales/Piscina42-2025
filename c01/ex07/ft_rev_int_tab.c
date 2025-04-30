@@ -10,10 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+// #include <stdio.h>
 
-int	ft_rev_int_tab(int *tab, int size)
+void	ft_rev_int_tab(int *tab, int size)
 {
 	int	count;
 	int	temporary;
@@ -31,30 +30,27 @@ int	ft_rev_int_tab(int *tab, int size)
 
 }
 
+// int	main(void)
+// {
+// 	int	size;
+// 	int	count;
+// 	int	count2;
+// 	int	tab[] = {8, 7, 1, 5, 6, 3};
 
-
-int	main(void)
-{
-	int	size;
-	int	count;
-	int	count2;
-	int	tab[] = {8, 7, 1, 5, 6, 3};
-
-	size = 6;
-	count = 0;
-	count2 = 0;
-	printf("Array atual: %d\n ", tab[count]);
-	while (count < size)
-	{
-		printf("%d ", tab[count]);
-		count++;
-	}
-	ft_rev_int_tab(tab, size);
-	printf("\nArray depois da função: %d \n", tab[count2]);
-	while (count2 < size)
-	{
-		printf("%d ", tab[count2]);
-		count2++;
-	}
-}
-
+// 	size = 6;
+// 	count = 0;
+// 	count2 = 0;
+// 	printf("Array atual: %d\n ", tab[count]);
+// 	while (count < size)
+// 	{
+// 		printf("%d ", tab[count]);
+// 		count++;
+// 	}
+// 	ft_rev_int_tab(tab, size);
+// 	printf("\nArray depois da função: %d \n", tab[count2]);
+// 	while (count2 < size)
+// 	{
+// 		printf("%d ", tab[count2]);
+// 		count2++;
+// 	}
+// }
