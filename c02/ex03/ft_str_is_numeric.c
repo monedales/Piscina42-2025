@@ -1,6 +1,4 @@
 
-#include <stdio.h>
-
 int	ft_str_is_numeric(char *str)
 {
 	int count;
@@ -14,13 +12,13 @@ int	ft_str_is_numeric(char *str)
 	}
 	return (1);
 }
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	int	x;
 
-int	main(void)
-{
-	int	x;
+// 	x = ft_str_is_numeric("9");
 
-	x = ft_str_is_numeric("9");
-
-	printf("é número? %d\n", x);
-	return (0);
-}
+// 	printf("é número? %d\n", x);
+// 	return (0);
+// }

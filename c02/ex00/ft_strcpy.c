@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 char	*ft_strcpy(char *dest, char *src)
 {
 	int	count;
@@ -25,18 +23,18 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[count] = '\0';
 	return (dest);
 }
+// #include <unistd.h>
+// int	main(void)
+// {
+// 	char	src[] = "KKK";
+// 	char	dest[4];
 
-int	main(void)
-{
-	char	src[] = "KKK";
-	char	dest[4];
+// 	printf("%s\n", src);
+// 	printf("%s\n", dest);
 
-	printf("%s\n", src);
-	printf("%s\n", dest);
+// 	ft_strcpy(dest, src);
 
-	ft_strcpy(dest, src);
-
-	printf("src: %s\n", src);
-	printf("dest: %s\n", dest);
-	return (0);
-}
+// 	printf("src: %s\n", src);
+// 	printf("dest: %s\n", dest);
+// 	return (0);
+// }

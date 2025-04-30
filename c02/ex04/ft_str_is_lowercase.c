@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 int	ft_str_is_lowercase(char *str)
 {
@@ -14,14 +13,15 @@ int	ft_str_is_lowercase(char *str)
 	return (1);
 }
 
-int main (void)
-{
-	int i;
+// #include <stdio.h>
+// int main (void)
+// {
+// 	int i;
 
-	i = ft_str_is_lowercase("123");
-	// i = ft_str_is_lowercase("zebra");
-	// i = ft_str_is_lowercase("zebrAAAA");
-	// i = ft_str_is_lowercase("");
-	printf("teste: %d\n", i);
-	return (0);
-}
+// 	i = ft_str_is_lowercase("123");
+// 	// i = ft_str_is_lowercase("zebra");
+// 	// i = ft_str_is_lowercase("zebrAAAA");
+// 	// i = ft_str_is_lowercase("");
+// 	printf("teste: %d\n", i);
+// 	return (0);
+// }
