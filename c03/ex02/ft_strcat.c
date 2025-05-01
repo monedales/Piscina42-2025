@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/01 18:10:37 by maria-ol          #+#    #+#             */
+/*   Updated: 2025/05/01 18:11:09 by maria-ol         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 char	*ft_strcat(char *dest, char *src)
 {
 	int	count;
@@ -17,7 +29,7 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 
-#include <string.h>
+/*#include <string.h>
 #include <stdio.h>
 int main(){
   char resultado[23] = "abacaxi ";
@@ -28,4 +40,4 @@ int main(){
   printf("%s\n", resultado);
   
   return (0);
-}
+}*/

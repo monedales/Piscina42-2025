@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: maria-ol <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/01 18:11:36 by maria-ol          #+#    #+#             */
+/*   Updated: 2025/05/01 18:11:53 by maria-ol         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	county;
@@ -13,7 +25,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	return (dest);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 int	main(void)
 {
@@ -25,4 +37,4 @@ int	main(void)
 	ft_strncat(resultado, "ou abacate?", num);
 	printf("%s\n", resultado);
 	return (0);
-}
+}*/
