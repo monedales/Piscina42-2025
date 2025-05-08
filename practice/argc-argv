@@ -1,0 +1,46 @@
+✅ Checklist para resolver exercícios com argc / argv (sem pânico!)
+🧠 1. O que o exercício quer imprimir?
+Um ou mais argumentos?
+
+Cada caractere ou a string toda?
+
+Em ordem normal ou invertida?
+
+Ex:
+
+“Printe todos os argumentos menos o nome do programa, em ordem inversa”
+✔️ OK, então: argumentos de argv[argc - 1] até argv[1]
+
+🔢 2. Quantos loops você vai precisar?
+1 loop: quando só precisa acessar argv[i] inteiro de cada vez.
+
+2 loops: se precisa acessar caractere por caractere (argv[i][j]).
+
+Ex:
+
+Preciso imprimir cada caractere: então preciso de dois while.
+
+🔁 3. Qual o valor inicial e a condição de parada de cada loop?
+Externo (argumentos)
+
+Se for normal: i = 1; i < argc; i++
+
+Se for inverso: i = argc - 1; i > 0; i--
+
+Interno (caracteres)
+
+Sempre: j = 0; argv[i][j] != '\0'; j++
+
+🧱 4. Organize a estrutura base antes de imprimir qualquer coisa
+
+int i = ...;
+while (...) {
+	int j = 0;
+	while (...) {
+		// write(1, &argv[i][j], 1);
+		j++;
+	}
+	// write(1, "\n", 1);
+	i++;
+}
+Isso te dá um esqueleto limpo. Depois você preenche as condições conforme o exercício pedir.
