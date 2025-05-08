@@ -5,17 +5,17 @@ void	ft_add(int *ptr, int number)
 
 void	ft_multi(int *ptr, int number)
 {
-	*ptr = *ptr * number;
+	*ptr *= number;
 }
 
 void	ft_subs(int *ptr, int number)
 {
-	*ptr =- number;
+	*ptr -= number;
 }
 
 void	ft_div(int *ptr, int number)
 {
-	*ptr = *ptr / number;
+	*ptr /= number;
 }
 
 #include <stdio.h>
